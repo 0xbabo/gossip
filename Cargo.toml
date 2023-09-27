@@ -73,6 +73,7 @@ tungstenite = { version = "0.19", default-features = false }
 url = "2.4"
 vecmap-rs = "0.1"
 zeroize = "1.6"
+bindgen = { version = "0.68.1", default-features = false, features = ["static"] }
 
 [target.'cfg(windows)'.dependencies]
 normpath = "1.1"
