@@ -33,7 +33,7 @@ dirs = "5.0"
 eframe = { git = "https://github.com/mikedilger/egui", rev = "538088439c7c507fe49c730eab84ddd85e147391", features = [ "persistence" ] }
 egui-winit = { git = "https://github.com/mikedilger/egui", rev = "538088439c7c507fe49c730eab84ddd85e147391", features = [ "default" ] }
 egui_extras = { git = "https://github.com/mikedilger/egui", rev = "538088439c7c507fe49c730eab84ddd85e147391", features = [ "image", "svg" ] }
-egui-video = { git = "https://github.com/mikedilger/egui-video", rev = "5a7297138dce16425c7dc7a8eab4d39d79088aba",  features = [ "from_bytes" ], optional = true }
+egui-video = { git = "https://github.com/badonyx/egui-video", rev = "78851e2b183774686fbfa6a91ec8eca511a56a5a",  features = [ "from_bytes" ], optional = true }
 encoding_rs = "0.8"
 fallible-iterator = "0.2"
 filetime = "0.2"
@@ -60,7 +60,7 @@ reqwest = { version = "0.11", default-features=false, features = ["brotli", "def
 rhai = { version = "1.15", features = [ "std", "sync" ]}
 rpassword = "7.2"
 rusqlite = { version = "0.29", features = ["bundled", "chrono", "serde_json"] }
-sdl2 = { version = "0.35.2", features = ["bundled"], optional = true }
+sdl2 = { version = "0.35.2", features = ["use-pkgconfig"], optional = true }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 sha2 = "0.10"
