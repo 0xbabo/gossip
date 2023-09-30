@@ -501,7 +501,7 @@ impl GossipUi {
         #[cfg(feature = "video-ffmpeg")]
         let audio_device = {
             let mut device = None;
-            if let Ok(init) = sdl2::init() {
+            if let Ok(init) = egui_video::init() {
                 if let Ok(audio) = init.audio() {
                     if let Ok(dev) = egui_video::init_audio_device(&audio) {
                         device = Some(dev);
